@@ -1,0 +1,14 @@
+# If not running interactively, don't do anything
+# TODO: test this and make sure it works on ZSH
+# copied it straight from BASH file
+[[ $- != *i* ]] && return
+
+# iteratively load all zsh scripts in zsh.d
+if test -d /etc/zshrc.d/; then
+    for zfile in /etc/zshrc.d/*.zsh; do
+        source "$zfile"
+    done
+    unset zfile
+fi
+
+export PATH=/cbin:$PATH

@@ -1,0 +1,7 @@
+export EDITOR=vim
+export VISUAL=vim
+#export LC_ALL=en_DK.UTF-8
+export LANG=en_US.UTF-8
+export LC_TIME=en_DK.UTF-8
+# Uncomment this line if you are in a Debian chroot on Android:
+# export DEBIAN_PHONE_CHROOT=TRUE
